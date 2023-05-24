@@ -11,8 +11,8 @@ if (wordLengthEqual(firstWord, secondWord)){
 
 /**
  * 
- * @param {*} word1 
- * @param {*} word2 
+ * @param word1 - First word to check
+ * @param word2 - Second word to check
  */
 
 function wordLengthEqual(word1, word2){
