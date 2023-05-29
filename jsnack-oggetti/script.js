@@ -1,4 +1,3 @@
-const alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
 
 const player = {
     playerCode: generateSequence(),
