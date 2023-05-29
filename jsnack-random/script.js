@@ -1,13 +1,20 @@
-let result = [];
+function getRandomUniqueNumber (min, max, elements){
+    const numberList = [];
 
-for (let i = 0;i < 4;i++){
-    result.push(getRandomInt(1,5));
+if ( (max-min) < elements){
+    return [];
 }
 
-console.log(result)
+    while (numberList.length < elements){
+    const newRandomNumber = getRandomInt(min, max);
+    if (!numberList.includes(newRandomNumber)){
+        numberList.push(newRandomNumber);
+    }
+    return numberList;
+}
+};
 
 function getRandomInt (min, max){
     const randomNumber =  Math.floor(Math.random()* max) + min;
     return randomNumber;
 }
-
