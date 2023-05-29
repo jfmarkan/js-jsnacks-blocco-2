@@ -1,4 +1,3 @@
-
 const player = {
     playerCode: generateSequence(),
     playerName: 'Juan',
@@ -24,5 +23,5 @@ function generateSequence(){
     }
     
 
-    return result + getRandomInt(0, 999);
+    return result + getRandomInt(0, 9) + getRandomInt(0, 9) + getRandomInt(0, 9);
 }
