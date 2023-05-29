@@ -4,7 +4,7 @@ const player = {
     playerName: 'Juan',
     playerSurname: 'Markan',
     playerAge: 38,
-    pointsPerGame: getRandomInt(0, 50,),
+    pointsPerGame: getRandomInt(0, 50),
     threePointsSuccess: getRandomInt(0, 100),
     stops: getRandomInt(0, 30),
     shots: getRandomInt(20, 100)
