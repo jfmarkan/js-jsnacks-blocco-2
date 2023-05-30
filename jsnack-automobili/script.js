@@ -16,11 +16,14 @@ const automobili = [
     {make:'Alfa Romeo', fuel: 'diesel', model:'Giulietta'},
 ];
 
-automobiliBenzina=[];
+
+const automobiliBenzina=[];
+const automobiliDiesel=[];
 
 for (let i=0;i<automobili.length;i++){
     if (automobili[i].fuel == 'benzina'){
         console.log(automobili[i].make, automobili[i].model);
+        automobiliBenzina.push(automobili[i].make, automobili[i].model);
     }
 }
 
@@ -29,6 +32,9 @@ console.log('DIESEL CARS');
 console.log('-----------');
 
 automobili.forEach(element => {
-    if (element.fuel == 'diesel')
-        console.log(element.make, element.model)
+    if (element.fuel == 'diesel');
+        console.log(element.make, element.model);
+        automobiliDiesel.push(element.make, element.model);
 });
+
+const automobiliOthers = automobili.filter(fuel => (fuel !== 'diesel' && fuel !== 'benzina'));
