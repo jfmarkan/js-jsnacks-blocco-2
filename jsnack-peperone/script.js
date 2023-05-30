@@ -13,17 +13,9 @@ const peperoni = [
 
 let sum = 0;
 
-for (let i = 0; i < 10; i++){
+for (let i = 0; i < peperoni.length ; i++){
     let number = peperoni[i].weight;
     sum += number;
 }
 
 console.log(sum);
-
-// function createPeperoni (variety, weight, length){
-//     let variety = variety;
-//     let weight = weight;
-//     let length = length;
-
-//     peperoni.push(createPeperoni())
-// }
