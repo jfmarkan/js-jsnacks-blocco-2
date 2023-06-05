@@ -22,8 +22,7 @@ const automobiliDiesel=[];
 
 for (let i=0;i<automobili.length;i++){
     if (automobili[i].fuel == 'benzina'){
-        console.log(automobili[i].make, automobili[i].model);
-        automobiliBenzina.push(automobili[i].make, automobili[i].model);
+        automobiliBenzina.push(automobili[i]);
     }
 }
 
@@ -32,9 +31,11 @@ console.log('DIESEL CARS');
 console.log('-----------');
 
 automobili.forEach(element => {
-    if (element.fuel == 'diesel');
-        console.log(element.make, element.model);
-        automobiliDiesel.push(element.make, element.model);
+    if (element.fuel == 'diesel'){
+        automobiliDiesel.push(element);
+    }
 });
 
-const automobiliOthers = automobili.filter(fuel => (fuel !== 'diesel' && fuel !== 'benzina'));
+const automobiliOthers = automobili.filter(model => (model.fuel !== 'diesel' && model.fuel !== 'benzina'));
+
+console.log(automobiliBenzina, automobiliDiesel, automobiliOthers);
